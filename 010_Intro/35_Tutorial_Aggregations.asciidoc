@@ -11,7 +11,7 @@ GET /megacorp/employee/_search
 {
   "aggs": {
     "all_interests": {
-      "terms": { "field": "interests" }
+      "terms": { "field": "interests.keyword" }
     }
   }
 }
